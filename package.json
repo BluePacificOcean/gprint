@@ -4,7 +4,7 @@
   "description": "佳博打印机网页版",
   "main": "./src/index.html",
   "scripts": {
-    "dev": "live-server",
+    "dev": "live-server --open=src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
-import PrintMenuItem from "./PrintMenuItem.js"
-import {DateMenuItem, DateTimeMenuItem} from "./DateMenuItem.js"
+import PrintMenuItem from "./menuItems/PrintMenuItem.js"
+import {DateMenuItem, DateTimeMenuItem} from "./menuItems/DateMenuItem.js"
 
 
 // document.body.style.transform = `scale(${1280/window.innerWidth})`
