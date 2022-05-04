@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打印机</title>
+    <link href="../lib/WangEditorStyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/print.min.css">
+    <!-- 引入 js -->
+    <script src="../lib/wangeditor.min.js"></script>
+    <script src="../lib/print.min.js"></script>
+
+    <style type="text/css">
+        @media print {
+            .no-print {
+                display: none;
+            }
+            #view {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        body {
+            transform-origin: center;
+        }
+        #app {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+        #container-toolbar {
+            flex: 0 0 auto;
+            margin-bottom: 15px;
+        }
+        #view{
+            width: 822.83px;
+            height: 658.26px;
+        }
+        @media screen and (max-width:800px) {
+            #view {
+                width: 100%;
+                height: auto;
+                flex: 1 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div id="container-toolbar" class="no-print"></div>
+        <div id="view"></div>
+    </div>
+
+    <script type="module" src="../index.js" ></script>
+</body>
+
+</html>
